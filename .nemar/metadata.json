@@ -1,0 +1,187 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "Colin W. Hoy": {
+      "orcid": "0000-0001-7422-2544",
+      "affiliations": [
+        {
+          "name": "Department of Neurology, University of California, San Francisco, CA 94143"
+        }
+      ]
+    },
+    "Coralie de Hemptinne": {
+      "orcid": "0000-0003-2780-3666",
+      "affiliations": [
+        {
+          "name": "Norman Fixel Institute for Neurological Diseases, University of Florida, Gainesville, FL 32608"
+        },
+        {
+          "name": "Department of Neurology, University of Florida, Gainesville, FL 32608"
+        }
+      ]
+    },
+    "Sarah S. Wang": {
+      "orcid": "0000-0002-3865-9594",
+      "affiliations": [
+        {
+          "name": "Department of Neurology, University of California, San Francisco, CA 94143"
+        }
+      ]
+    },
+    "Catherine J. Harmer": {
+      "orcid": "0000-0002-1609-8335",
+      "affiliations": [
+        {
+          "name": "Department of Psychiatry, University of Oxford, Oxford OX3 7JX, United Kingdom"
+        }
+      ]
+    },
+    "Matthew A. J. Apps": {
+      "orcid": "0000-0001-5793-2202",
+      "affiliations": [
+        {
+          "name": "Department of Experimental Psychology, University of Oxford, Oxford OX2 6GG, United Kingdom"
+        },
+        {
+          "name": "Institute for Mental Health, School of Psychology, University of Birmingham, Birmingham UK B15 2TT, United Kingdom"
+        },
+        {
+          "name": "Centre for Human Brain Health, School of Psychology, University of Birmingham, Birmingham B15 2TT, United Kingdom"
+        }
+      ]
+    },
+    "Masud Husain": {
+      "orcid": "0000-0002-6850-9255",
+      "affiliations": [
+        {
+          "name": "Department of Experimental Psychology, University of Oxford, Oxford OX2 6GG, United Kingdom"
+        },
+        {
+          "name": "Nuffield Department of Clinical Neurosciences, University of Oxford, Oxford OX3 9DU, United Kingdom"
+        }
+      ]
+    },
+    "Philip A. Starr": {
+      "orcid": "0000-0003-2733-4003",
+      "affiliations": [
+        {
+          "name": "Department of Neurological Surgery, University of California, San Francisco, CA 94143, United Kingdom"
+        }
+      ]
+    },
+    "Simon Little": {
+      "orcid": "0000-0001-6249-6230",
+      "affiliations": [
+        {
+          "name": "Department of Neurology, University of California, San Francisco, CA 94143"
+        }
+      ]
+    }
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.17605/OSF.IO/JQ6Z4",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.1073/pnas.2322869121",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1101/2023.12.05.570285",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000476",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000476",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "Wellcome Trust",
+      "award_number": "226645/Z/22/Z"
+    },
+    {
+      "funder_name": "NIH NINDS",
+      "award_number": "K23NS120037"
+    },
+    {
+      "funder_name": "NIH NIMH",
+      "award_number": "F32MH132174"
+    },
+    {
+      "funder_name": "UKRI BBSRC",
+      "award_number": "BB/R010668/2"
+    }
+  ],
+  "title": "Hoy2024 effort decision LFP: subthalamic/pallidal and prefrontal recordings during an effort-based decision task (DBS surgery)",
+  "license": "CC-BY-4.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "ieeg"
+  ],
+  "resource_type_specific": "iEEG Dataset",
+  "sizes": [
+    "163 MB (43 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".mat",
+    ".py",
+    ".tsv",
+    ".txt",
+    ".vhdr",
+    ".vmrk"
+  ],
+  "description": "Intraoperative local field potential recordings from the subthalamic nucleus or globus pallidus internus and from prefrontal cortex (frontopolar or orbitofrontal) in five patients undergoing deep brain stimulation surgery while they performed an effort-based decision-making task. The dataset repackages the authors' OSF release into BIDS as preprocessed bipolar epochs with trial-level behavioural events, together with continuous raw neural exports. It supports study of beta and theta oscillations related to effort and previous reward in the human basal ganglia and prefrontal cortex.",
+  "methods_description": "Bipolar LFP signals were recorded intraoperatively during DBS surgery at 422 or 500 Hz while participants performed an effort-based decision task. Preprocessed FieldTrip epochs span -2 to 9 s around the offer, with per-trial behavioural variables and model values stored as events. Continuous raw exports were converted to BrainVision float32 format.",
+  "keywords": [
+    {
+      "term": "local field potential"
+    },
+    {
+      "term": "Deep Brain Stimulation",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D046690"
+    },
+    {
+      "term": "Subthalamic Nucleus",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D020531"
+    },
+    {
+      "term": "Globus Pallidus",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D005917"
+    },
+    {
+      "term": "Prefrontal Cortex",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D017397"
+    },
+    {
+      "term": "Decision Making",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D003657"
+    },
+    {
+      "term": "effort and reward"
+    },
+    {
+      "term": "iEEG"
+    }
+  ],
+  "source_hash": "f6622fe59349f1080c016ab08a28b04ff15e439dde9113c31f29fa3971ee0b7d"
+}
