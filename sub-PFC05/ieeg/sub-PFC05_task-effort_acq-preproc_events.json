@@ -1,0 +1,101 @@
+{
+  "onset": {
+    "Description": "Start of the trial segment in this file (trials are written back-to-back)",
+    "Units": "s"
+  },
+  "duration": {
+    "Description": "Length of the trial segment",
+    "Units": "s"
+  },
+  "sample": {
+    "Description": "First sample of the trial segment in the file (0-based)"
+  },
+  "trial_index": {
+    "Description": "Trial number in the released file (1-based, release order)"
+  },
+  "trial_time_start": {
+    "Description": "Authors' time axis value of the first sample of the trial (s, relative to the trial's event; n/a if not released)",
+    "Units": "s"
+  },
+  "key": {
+    "Description": "sbj_data.bhv.key as released (per trial)"
+  },
+  "rt": {
+    "Description": "sbj_data.bhv.rt as released (per trial)"
+  },
+  "rt_prv": {
+    "Description": "sbj_data.bhv.rt_prv as released (per trial)"
+  },
+  "blk": {
+    "Description": "sbj_data.bhv.blk as released (per trial)"
+  },
+  "blk_trl": {
+    "Description": "sbj_data.bhv.blk_trl as released (per trial)"
+  },
+  "run_trl": {
+    "Description": "sbj_data.bhv.run_trl as released (per trial)"
+  },
+  "trl": {
+    "Description": "sbj_data.bhv.trl as released (per trial)"
+  },
+  "trl_prv": {
+    "Description": "sbj_data.bhv.trl_prv as released (per trial)"
+  },
+  "run": {
+    "Description": "sbj_data.bhv.run as released (per trial)"
+  },
+  "effort": {
+    "Description": "sbj_data.bhv.effort as released (per trial)"
+  },
+  "stake": {
+    "Description": "sbj_data.bhv.stake as released (per trial)"
+  },
+  "decision": {
+    "Description": "sbj_data.bhv.decision as released (per trial)"
+  },
+  "effort_prv": {
+    "Description": "sbj_data.bhv.effort_prv as released (per trial)"
+  },
+  "stake_prv": {
+    "Description": "sbj_data.bhv.stake_prv as released (per trial)"
+  },
+  "decision_prv": {
+    "Description": "sbj_data.bhv.decision_prv as released (per trial)"
+  },
+  "grs": {
+    "Description": "sbj_data.bhv.grs as released (per trial)"
+  },
+  "good_key_ix": {
+    "Description": "sbj_data.bhv.good_key_ix as released (per trial)"
+  },
+  "SV": {
+    "Description": "sbj_data.bhv.SV as released (per trial)"
+  },
+  "EFFs": {
+    "Description": "sbj_data.bhv.EFFs as released (per trial)"
+  },
+  "p_accept": {
+    "Description": "sbj_data.bhv.p_accept as released (per trial)"
+  },
+  "absSV": {
+    "Description": "sbj_data.bhv.absSV as released (per trial)"
+  },
+  "dec_ease": {
+    "Description": "sbj_data.bhv.dec_ease as released (per trial)"
+  },
+  "SV_prv": {
+    "Description": "sbj_data.bhv.SV_prv as released (per trial)"
+  },
+  "absSV_prv": {
+    "Description": "sbj_data.bhv.absSV_prv as released (per trial)"
+  },
+  "EFFs_prv": {
+    "Description": "sbj_data.bhv.EFFs_prv as released (per trial)"
+  },
+  "p_accept_prv": {
+    "Description": "sbj_data.bhv.p_accept_prv as released (per trial)"
+  },
+  "dec_ease_prv": {
+    "Description": "sbj_data.bhv.dec_ease_prv as released (per trial)"
+  }
+}

@@ -1,0 +1,6 @@
+participant_id	age	sex	source_id	channels_preproc
+sub-PFC01	n/a	n/a	PFC01	STN/FPC
+sub-PFC03	n/a	n/a	PFC03	GPi/FPC
+sub-PFC04	n/a	n/a	PFC04	STN/OFC
+sub-PFC05	n/a	n/a	PFC05	GPi/OFC
+sub-PMC10	n/a	n/a	PMC10	n/a

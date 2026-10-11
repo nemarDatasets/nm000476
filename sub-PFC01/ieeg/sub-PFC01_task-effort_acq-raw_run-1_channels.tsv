@@ -1,0 +1,5 @@
+name	type	units	low_cutoff	high_cutoff	sampling_frequency	reference	group	status	status_description	description
+ch1	SEEG	n/a	n/a	n/a	500.0	n/a	n/a	good	n/a	continuous export, variable datar column/row 1; the release does not document the channel order (the subject's preprocessed channels are STN/FPC)
+ch2	SEEG	n/a	n/a	n/a	500.0	n/a	n/a	good	n/a	continuous export, variable datar column/row 2; the release does not document the channel order (the subject's preprocessed channels are STN/FPC)
+ch3	SEEG	n/a	n/a	n/a	500.0	n/a	n/a	good	n/a	continuous export, variable datar column/row 3; the release does not document the channel order (the subject's preprocessed channels are STN/FPC)
+ch4	SEEG	n/a	n/a	n/a	500.0	n/a	n/a	good	n/a	continuous export, variable datar column/row 4; the release does not document the channel order (the subject's preprocessed channels are STN/FPC)

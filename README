@@ -1,0 +1,22 @@
+# Hoy et al. 2024: basal ganglia and prefrontal LFP during effort-based decisions (intraoperative DBS recordings)
+
+5 subjects, 14 recordings, 3.90 h. Released by the authors on OSF (doi:10.17605/OSF.IO/JQ6Z4, CC-BY-4.0).
+
+## Organisation (DatasetType derivative)
+- `*_acq-preproc_ieeg.vhdr` (PFC01, PFC03, PFC04, PFC05): the authors' preprocessed, epoched bipolar signals (`sbj_data.ts`, trials
+  -2 to 9 s around the offer, 422 or 500 Hz) with the two channel labels of the release (STN or GPi; FPC or OFC), written
+  back-to-back with one `New Segment` marker per trial. `events.tsv` carries every per-trial field of `sbj_data.bhv` (key, rt,
+  block, effort, stake, decision, previous-trial values, model values SV/EFFs/p_accept/dec_ease, ...); `code/*_bhvextra.json` holds the
+  index lists (good_key_ix, reject_ix, ...) and the model parameters (`sbj_data.mdl`).
+- `*_acq-raw_run-<k>_ieeg.vhdr` (all five subjects, two runs each): the continuous neural exports of `raw_data/` (`signal` 2 x N at
+  422 Hz, or `datar` N x 4 at 500 Hz for PFC01) written unchanged. The release does not document the channel order or units of these
+  exports (channels `ch1..`, `units` n/a) and the behavioural trial timestamps are on a separate clock (sync files), so these runs
+  have no events.tsv.
+- No electrode coordinates are released (`electrodes.tsv` with n/a). Age and sex are not in the release.
+- `sourcedata/osf-jq6z4/`: the preprocessed and neural MAT files (MAT header export dates set to day 01). The behavioural and sync
+  files contain exact session timestamps and are not redistributed (see `NOT_COPIED_release_files.txt`); session months:
+  {"PFC01_behavioral_data_run1.mat": "2020-06-01", "PFC01_behavioral_data_run2.mat": "2020-06-01", "PFC03_behavioral_data_run1.mat": "2019-12-01", "PFC03_behavioral_data_run2.mat": "2019-12-01", "PFC04_behavioral_data_run1.mat": "2019-09-01", "PFC04_behavioral_data_run2.mat": "2019-09-01", "PFC05_behavioral_data_run1.mat": "2019-09-01", "PFC05_behavioral_data_run2.mat": "2019-09-01", "PMC10_behavioral_data_run1.mat": "2020-01-01", "PMC10_behavioral_data_run2.mat": "2020-01-01"}.
+
+## Privacy
+Subject codes only; the behavioural files with exact timestamps are excluded. String scan of the converted MAT files:
+12 flagged strings (see code/conversion_report.json).

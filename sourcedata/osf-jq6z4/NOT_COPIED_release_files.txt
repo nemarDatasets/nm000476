@@ -1,0 +1,1 @@
+raw_data/*_behavioral_data_run*.mat, raw_data/PFC05_stim_behavior/*, raw_data/SqueezeSubjectSyncSummary_anonymized.xlsx: behavioural/sync files with exact session timestamps; not redistributed here (available in the OSF release). Their per-trial behaviour is in the acq-preproc events.tsv (sbj_data.bhv).

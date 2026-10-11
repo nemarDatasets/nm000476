@@ -1,0 +1,19 @@
+{
+  "Description": "sbj_data.bhv fields that are not per-trial vectors (index lists), and sbj_data.mdl",
+  "bhv_other": {
+    "empty_ix": [],
+    "bad_resp_ix": [
+      76
+    ],
+    "bad_rt_ix": [],
+    "reject_ix": []
+  },
+  "mdl": {
+    "par": [
+      0.32489861875971005,
+      15.069168802427672
+    ],
+    "fit": 4.665314074956697
+  },
+  "desp": "PFC05_stim"
+}

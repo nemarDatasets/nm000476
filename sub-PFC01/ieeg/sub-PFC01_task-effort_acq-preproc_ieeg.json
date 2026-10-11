@@ -1,0 +1,27 @@
+{
+  "TaskName": "effort",
+  "TaskDescription": "Effort-based decision-making (apple-gathering task, 'AGT for core protocol 2018'): on each trial an offer of a reward (stake, apples) for a grip-force effort level (fraction of maximum voluntary contraction) was shown and the patient accepted or rejected it, then squeezed if accepted. Recorded intraoperatively during DBS surgery. Preprocessed trials (-2 to 9 s) with the authors' per-trial behavioural table (sbj_data.bhv) and model-derived values (SV, p_accept, ...).",
+  "Instructions": "n/a (see article)",
+  "PowerLineFrequency": 60,
+  "SoftwareFilters": {
+    "AuthorsPreprocessing": {
+      "Description": "Release file *_stim_preproc_osr.mat: preprocessed, epoched FieldTrip data (sbj_data.ts); steps as described in the article. Values written unchanged."
+    }
+  },
+  "HardwareFilters": "n/a",
+  "iEEGReference": "bipolar (two re-referenced channels per subject, labels from the release: STN, FPC)",
+  "iEEGPlacementScheme": "one basal-ganglia DBS lead (STN or GPi) and one prefrontal electrode (FPC or OFC) per subject (article); no coordinates in the release",
+  "ElectricalStimulation": false,
+  "Manufacturer": "n/a",
+  "SamplingFrequency": 500.0,
+  "RecordingDuration": 1430.26,
+  "RecordingType": "epoched",
+  "EpochLength": 11.002,
+  "ECOGChannelCount": 1,
+  "SEEGChannelCount": 0,
+  "DBSChannelCount": 1,
+  "EEGChannelCount": 0,
+  "EMGChannelCount": 0,
+  "MiscChannelCount": 0,
+  "TriggerChannelCount": 0
+}

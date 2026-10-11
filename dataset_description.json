@@ -1,0 +1,56 @@
+{
+  "Name": "Hoy2024 effort decision LFP: subthalamic/pallidal and prefrontal recordings during an effort-based decision task (DBS surgery)",
+  "BIDSVersion": "1.10.0",
+  "DatasetType": "derivative",
+  "License": "CC-BY-4.0",
+  "Authors": [
+    "Colin W. Hoy",
+    "Coralie de Hemptinne",
+    "Sarah S. Wang",
+    "Catherine J. Harmer",
+    "Matthew A. J. Apps",
+    "Masud Husain",
+    "Philip A. Starr",
+    "Simon Little"
+  ],
+  "HowToAcknowledge": "Cite Hoy CW, de Hemptinne C, Wang SS, Harmer CJ, Apps MAJ, Husain M, Starr PA, Little S (2024). Beta and theta oscillations track effort and previous reward in the human basal ganglia and prefrontal cortex during decision making. PNAS 121(31):e2322869121, doi:10.1073/pnas.2322869121, and the OSF release doi:10.17605/OSF.IO/JQ6Z4.",
+  "ReferencesAndLinks": [
+    "https://doi.org/10.1073/pnas.2322869121",
+    "https://doi.org/10.1101/2023.12.05.570285",
+    "https://doi.org/10.17605/OSF.IO/JQ6Z4"
+  ],
+  "Keywords": [
+    "local field potential",
+    "subthalamic nucleus",
+    "globus pallidus",
+    "prefrontal cortex",
+    "effort",
+    "reward",
+    "decision making",
+    "deep brain stimulation",
+    "beta",
+    "theta"
+  ],
+  "SourceDatasets": [
+    {
+      "DOI": "doi:10.17605/OSF.IO/JQ6Z4",
+      "URL": "https://osf.io/jq6z4/",
+      "Version": "OSF node jq6z4 (files as downloaded 2026-10-11; sha256 in sourcedata/osf-jq6z4/DEIDENTIFICATION_MANIFEST.tsv)"
+    }
+  ],
+  "GeneratedBy": [
+    {
+      "Name": "o5c_A1_convert_lit174.py",
+      "Description": "Repackaging of the preprocessed FieldTrip epochs (acq-preproc, with sbj_data.bhv as events) and of the continuous neural exports (acq-raw) into BrainVision float32. Code in code/."
+    }
+  ],
+  "EthicsApprovals": [
+    "Collected under the source study's approval (see the article, doi:10.1073/pnas.2322869121)."
+  ],
+  "Funding": [
+    "Wellcome Trust 226645/Z/22/Z",
+    "NIH NINDS K23NS120037",
+    "NIH NIMH F32MH132174",
+    "UKRI BBSRC BB/R010668/2"
+  ]
+}

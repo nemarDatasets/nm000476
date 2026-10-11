@@ -1,0 +1,14 @@
+{
+  "age": {
+    "Description": "not in the release"
+  },
+  "sex": {
+    "Description": "not in the release"
+  },
+  "source_id": {
+    "Description": "subject code in the release file names (PFC = prefrontal cohort; PMC10 has raw runs only)"
+  },
+  "channels_preproc": {
+    "Description": "bipolar channel labels of the preprocessed release file (basal ganglia / prefrontal site)"
+  }
+}
