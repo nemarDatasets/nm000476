@@ -1,9 +1,9 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
-  "title": "Hoy2024 effort decision LFP: subthalamic/pallidal and prefrontal recordings during an effort-based decision task (DBS surgery)",
-  "description": "Intraoperative local field potential recordings from the subthalamic nucleus or globus pallidus and from prefrontal cortex (frontopolar or orbitofrontal) in five patients undergoing deep brain stimulation surgery while performing an effort-based decision-making task. The dataset contains the authors' preprocessed, epoched bipolar signals with per-trial behavioural and model variables, as well as continuous raw neural exports, repackaged in BIDS iEEG format. It supports study of beta and theta oscillations related to effort and previous reward during decision making.",
-  "methods_description": "Intraoperative bipolar LFP recorded at 422 or 500 Hz during an effort-based decision task. Preprocessed epochs span -2 to 9 s around offer onset and are accompanied by per-trial behavioural fields and computational model values (subjective value, p_accept). Continuous raw exports were converted to BrainVision float32.",
+  "title": "Hoy-2024-beta-10.1073/pnas.2322869121",
+  "description": "Intraoperative local field potential recordings from the basal ganglia (subthalamic nucleus or globus pallidus internus) and prefrontal cortex (frontopolar or orbitofrontal) of five patients undergoing deep brain stimulation surgery while performing an effort-based decision-making task. The dataset provides preprocessed, epoched bipolar signals with per-trial behavioural and model variables, together with continuous raw neural exports. It supports analysis of beta and theta oscillations related to effort and previous reward.",
+  "methods_description": "Bipolar LFP signals were recorded intraoperatively at 422 or 500 Hz during an effort-based decision task. Preprocessed epochs span -2 to 9 s around the offer, with trial-level behavioural fields stored in events.tsv. Continuous raw exports were repackaged unchanged into BrainVision format.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -92,11 +92,6 @@
       "term": "intracranial EEG"
     },
     {
-      "term": "Deep Brain Stimulation",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D046690"
-    },
-    {
       "term": "Subthalamic Nucleus",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D020531"
@@ -117,7 +112,12 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D003657"
     },
     {
-      "term": "effort and reward"
+      "term": "Deep Brain Stimulation",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D046690"
+    },
+    {
+      "term": "beta and theta oscillations"
     }
   ],
   "related_identifiers": [
@@ -185,5 +185,5 @@
     ".vmrk",
     ".yml"
   ],
-  "source_hash": "6f314cc8706067bc46bf598b2175654957e8f8e6ef07235a0ae81b0f409f103d"
+  "source_hash": "fb47b6c00cd915c67f3c31b944d30944a681a61decd89df813efd58c184cb871"
 }
