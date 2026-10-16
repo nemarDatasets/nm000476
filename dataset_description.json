@@ -1,5 +1,5 @@
 {
-  "Name": "Hoy2024 effort decision LFP: subthalamic/pallidal and prefrontal recordings during an effort-based decision task (DBS surgery)",
+  "Name": "Hoy-2024-beta-10.1073/pnas.2322869121",
   "BIDSVersion": "1.10.0",
   "DatasetType": "derivative",
   "License": "CC-BY-4.0",
@@ -54,5 +54,5 @@
     "UKRI BBSRC BB/R010668/2"
   ],
   "DatasetDOI": "10.82901/nemar.nm000476",
-  "Version": "1.0.0"
+  "Version": "1.0.1"
 }
