@@ -1,7 +1,7 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
-  "title": "Hoy-2024-beta-10.1073/pnas.2322869121",
+  "title": "Hoy2024 effort decision LFP: subthalamic/pallidal and prefrontal recordings during an effort-based decision task (DBS surgery)",
   "description": "Intraoperative local field potential recordings from the basal ganglia (subthalamic nucleus or globus pallidus internus) and prefrontal cortex (frontopolar or orbitofrontal) of five patients undergoing deep brain stimulation surgery while performing an effort-based decision-making task. The dataset provides preprocessed, epoched bipolar signals with per-trial behavioural and model variables, together with continuous raw neural exports. It supports analysis of beta and theta oscillations related to effort and previous reward.",
   "methods_description": "Bipolar LFP signals were recorded intraoperatively at 422 or 500 Hz during an effort-based decision task. Preprocessed epochs span -2 to 9 s around the offer, with trial-level behavioural fields stored in events.tsv. Continuous raw exports were repackaged unchanged into BrainVision format.",
   "license": "CC-BY-4.0",
@@ -185,5 +185,5 @@
     ".vmrk",
     ".yml"
   ],
-  "source_hash": "fb47b6c00cd915c67f3c31b944d30944a681a61decd89df813efd58c184cb871"
+  "source_hash": "513ac027464dc2279c7ab2ab9c3574f1ca4c54f457bf733421abbf6951766865"
 }
