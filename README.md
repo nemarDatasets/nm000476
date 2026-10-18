@@ -31,3 +31,11 @@ with unit `n/a` as volts with scale 1: `raw.get_data()` returns the stored numbe
 numbers are microvolt-sized, anything that assumes volts (plot scalings, rejection thresholds, µV conversions) sees
 them 1e6 times too large. In the 2026-10-17 check the channels had a robust SD of about 0.009-0.011 in the runs read, so these numbers are not microvolts either. No unit is assigned here because the source does not state one; treat the values as the
 release's numbers in an unknown unit.
+
+## NaN samples in the signal files (checked 18 Oct 2026)
+
+Some signal files store NaN (not-a-number) samples. A scan of 14 of the 14 recordings (whole files read with MNE on 18 Oct 2026; all recordings) found them in 2 recordings. Both MNE-BIDS and EEGDash load these files; `get_data()` returns the NaN values.
+
+In 2 recordings channels are NaN only in part of the recording (399 spans inside the recording, 1 spans at the start; median 1.14% of the samples; channels most often affected: ch1 (2), ch2 (2), ch3 (2), ch4 (2)). Examples: `sub-PFC01_task-effort_acq-raw_run-1_ieeg.vhdr` ch1, ch2, ch3, ch4 samples 25-26 (+4775 more spans); `sub-PFC01_task-effort_acq-raw_run-2_ieeg.vhdr` ch1, ch2, ch3, ch4 samples 0-1 (+1875 more spans). These samples cannot be restored from the release; crop them or replace them (e.g. `numpy.nan_to_num`, interpolation) before filtering. The data files are unchanged.
+
+Per-recording details (channels, NaN sample spans): `code/fix-20261018_nan_scan.json`.
