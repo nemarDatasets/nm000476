@@ -1,6 +1,6 @@
 {
   "TaskName": "effort",
-  "TaskDescription": "Effort-based decision-making task (see acq-preproc files); continuous intraoperative recording of one task run as exported in the release (raw_data/<ID>_neural_data_run<k>.mat). Trial timing for these runs is only available through the behavioural MAT files and sync pulses of the release, which are not sample-synchronised here (no events.tsv).",
+  "TaskDescription": "Effort-based decision-making task (see acq-preproc files); continuous intraoperative recording of one task run as exported in the release (raw_data/<ID>_neural_data_run<k>.mat). Trial timing for these runs is only available through the behavioural MAT files and sync pulses of the release, which are not sample-synchronised here (no trial events; the events.tsv holds only BAD_nan rows marking NaN samples, added 19 Oct 2026).",
   "Instructions": "n/a (see article)",
   "PowerLineFrequency": 60,
   "SoftwareFilters": "n/a",
