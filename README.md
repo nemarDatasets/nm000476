@@ -43,3 +43,14 @@ In 2 recordings channels are NaN in part of the recording: 6652 runs of consecut
 MNE-BIDS (`read_raw_bids`) turns every events.tsv row into an annotation, and MNE treats annotations whose name starts with `BAD` as bad spans: `raw.get_data(reject_by_annotation='omit')` leaves these samples out, and `mne.Epochs(..., reject_by_annotation=True)` (the default) drops epochs that overlap them. An annotation covers all channels, so a span in which only one channel is NaN is left out for every channel; to keep the other channels, crop or pick channels instead. Filtering does not skip BAD spans by default, so replace or crop NaN samples before filtering.
 
 Per NaN run and per all-NaN channel (recording, sample range, onset and duration in seconds, channels): `code/fix-20261019_nan_spans.tsv`. `code/fix-20261018_nan_scan.json` is the earlier, partial scan of 18 Oct 2026 (it skipped the largest recordings and lists at most 200 spans per recording); it is superseded by the table.
+
+## sub-PFC01: preprocessed trials versus the raw export (fix-20261030, Oct 2026)
+
+For sub-PFC03 the preprocessed trials (`acq-preproc`) are cut unchanged from the raw export: trials 1, 6 and 21 match
+`acq-raw_run-1` channels `ch1` (GPi) and `ch2` (FPC) sample for sample (normalised cross-correlation 1.000). For
+sub-PFC01 (Medtronic RC+S, 500 Hz) they do not: the best match of the same trials in `acq-raw_run-1` is `ch1` for STN
+and `ch3` for FPC at the same lag for both channels, with correlation 0.991-0.998, not 1. The PFC01 trials therefore
+come from run 1 (`ch1` = STN, `ch3` = FPC, by this match; the release does not document the channel order), but the
+authors changed the values in a way the release does not describe (for example filtering or re-referencing), so they are
+not sample-identical to the raw run. In `acq-raw_run-2` no trial matches (|r| at most 0.29). Numbers:
+`code/fix-20261030_preproc_vs_raw.json` (check of 30 Oct 2026, trials 1, 6, 21).
