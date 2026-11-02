@@ -13,11 +13,18 @@
 - `*_acq-raw_run-<k>_ieeg.vhdr` (all five subjects, two runs each): the continuous neural exports of `raw_data/` (`signal` 2 x N at
   422 Hz, or `datar` N x 4 at 500 Hz for PFC01) written unchanged. The release does not document the channel order or units of these
   exports (channels `ch1..`, `units` n/a) and the behavioural trial timestamps are on a separate clock (sync files), so these runs
-  have no trial events (sub-PFC01's two runs have an events.tsv with only `BAD_nan` rows, see 'NaN samples').
+  have no events.tsv.
 - No electrode coordinates are released (`electrodes.tsv` with n/a). Age and sex are not in the release.
 - `sourcedata/osf-jq6z4/`: the preprocessed and neural MAT files (MAT header export dates set to day 01). The behavioural and sync
   files contain exact session timestamps and are not redistributed (see `NOT_COPIED_release_files.txt`); session months:
   {"PFC01_behavioral_data_run1.mat": "2020-06-01", "PFC01_behavioral_data_run2.mat": "2020-06-01", "PFC03_behavioral_data_run1.mat": "2019-12-01", "PFC03_behavioral_data_run2.mat": "2019-12-01", "PFC04_behavioral_data_run1.mat": "2019-09-01", "PFC04_behavioral_data_run2.mat": "2019-09-01", "PFC05_behavioral_data_run1.mat": "2019-09-01", "PFC05_behavioral_data_run2.mat": "2019-09-01", "PMC10_behavioral_data_run1.mat": "2020-01-01", "PMC10_behavioral_data_run2.mat": "2020-01-01"}.
+
+Updated in version 1.0.4 by the depositors of this NEMAR copy (the published text above is kept unchanged; these items replace or extend it):
+
+- `*_acq-raw_run-<k>_ieeg.vhdr` (all five subjects, two runs each): the continuous neural exports of `raw_data/` (`signal` 2 x N at
+  422 Hz, or `datar` N x 4 at 500 Hz for PFC01) written unchanged. The release does not document the channel order or units of these
+  exports (channels `ch1..`, `units` n/a) and the behavioural trial timestamps are on a separate clock (sync files), so these runs
+  have no trial events (sub-PFC01's two runs have an events.tsv with only `BAD_nan` rows, see 'NaN samples').
 
 ## Privacy
 Subject codes only; the behavioural files with exact timestamps are excluded. String scan of the converted MAT files:
@@ -44,7 +51,7 @@ MNE-BIDS (`read_raw_bids`) turns every events.tsv row into an annotation, and MN
 
 Per NaN run and per all-NaN channel (recording, sample range, onset and duration in seconds, channels): `code/fix-20261019_nan_spans.tsv`. `code/fix-20261018_nan_scan.json` is the earlier, partial scan of 18 Oct 2026 (it skipped the largest recordings and lists at most 200 spans per recording); it is superseded by the table.
 
-## sub-PFC01: preprocessed trials versus the raw export (fix-20261030, Oct 2026)
+## sub-PFC01: preprocessed trials versus the raw export (version 1.0.4, Oct 2026)
 
 For sub-PFC03 the preprocessed trials (`acq-preproc`) are cut unchanged from the raw export: trials 1, 6 and 21 match
 `acq-raw_run-1` channels `ch1` (GPi) and `ch2` (FPC) sample for sample (normalised cross-correlation 1.000). For
